@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>dinstar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <form action="" method="post">
+            <label>host</label><br>
+            <input type="text" name="host" value=""><br>
+            <label>username</label><br>
+            <input type="text" name="username" value=""><br>
+            <label>password</label><br>
+            <input type="text" name="password" value=""><br>
+            <label>numberphone</label><br>
+            <input type="text" name="numberphone" value=""><br>
+            <label>content</label><br>
+            <input type="text" name="content" value=""><br><br>
+            <input type="submit" name="send" value="sent">
+        </form>
+    </body>
+    <script type='text/javascript'>
+        var rows = <%-JSON.stringify(data)%>;
+        console.log(rows);
+    </script>
+</html>
