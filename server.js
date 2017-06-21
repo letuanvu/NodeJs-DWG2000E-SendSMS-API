@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 })); 
 
 app.get('/',(req, res)=>{
-  res.render("home");
+  res.render("home",{data:"hello"});
 })
 
 app.post('/',(req, res)=>{
